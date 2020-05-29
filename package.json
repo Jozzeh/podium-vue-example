@@ -1,0 +1,35 @@
+{
+  "name": "podium-vue",
+  "version": "1.0.0",
+  "description": "Demo of vue micro frontends with Podium",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installAll": "(cd ./base-app && npm install) && (cd ./vue-message-pod && npm install) && (cd ./vue-receive-pod && npm install)",
+    "startMessagePod": "(cd ./vue-message-pod && npm run build && node podlet.js)",
+    "startReceivePod": "(cd ./vue-receive-pod && npm run build && node podlet.js)",
+    "startBaseApp": "(cd ./base-app && node layout.js)",
+    "start": "npm-run-all -p startMessagePod startReceivePod startBaseApp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jozzeh/podium-vue-example.git"
+  },
+  "keywords": [
+    "demo",
+    "podium",
+    "micro",
+    "frontend",
+    "Vue",
+    "VueJS"
+  ],
+  "author": "Jozzeh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jozzeh/podium-vue-example/issues"
+  },
+  "homepage": "https://github.com/Jozzeh/podium-vue-example#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
