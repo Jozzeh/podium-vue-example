@@ -1,7 +1,7 @@
 {
   "name": "base-app",
   "version": "0.1.0",
-  "description": "demo podium layout with svelte frameworks",
+  "description": "demo podium layout with vue frameworks",
   "main": "layout.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,9 @@
   "keywords": [
     "demo",
     "podium",
-    "svelte"
+    "vue",
+    "micro frontends",
+    "layout"
   ],
   "author": "Jozzeh",
   "license": "ISC",

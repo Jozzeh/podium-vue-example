@@ -13,7 +13,7 @@ const podlet = new Podlet({
   development: true, // optional, defaults to false
 });
 
-// All css and js files in the build folder should be added to the podlet definition.
+// All css and js files in the dist folder should be added to the podlet definition.
 let vueCssAssets = fs.readdirSync('dist/css');
 vueCssAssets.forEach((element, index) => {
   if(element.indexOf('.css') !== -1 && element.indexOf('.css.map') === -1){
