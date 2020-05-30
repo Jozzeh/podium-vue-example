@@ -1,4 +1,4 @@
-# podium-vue-example
+# Server-side composed VueJS micro frontends with Podium
 Demo of 2 Vue applications / Micro Frontends composed on the server-side by Podium
 
 Podium docs: https://podium-lib.io  
