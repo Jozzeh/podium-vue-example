@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "updateAll": "(cd ./base-app && npm update) && (cd ./vue-message-pod && npm update) && (cd ./vue-receive-pod && npm update)",
     "installAll": "(cd ./base-app && npm install) && (cd ./vue-message-pod && npm install) && (cd ./vue-receive-pod && npm install)",
     "startMessagePod": "(cd ./vue-message-pod && npm run build && node podlet.js)",
     "startReceivePod": "(cd ./vue-receive-pod && npm run build && node podlet.js)",
